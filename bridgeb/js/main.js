@@ -1,65 +1,32 @@
 $(document).ready( function() {
-$('a[href^="#"]').on('click', function(event) {
+    function fade() {
+        var animation_height = $(window).innerHeight() * 0.25;
+        var ratio = Math.round( (1 / animation_height) * 10000 ) / 10000;
 
-    var target = $(this.getAttribute('href'));
+        $('.fade').each(function() {
 
-    if( target.length ) {
-        event.preventDefault();
-        $('html, body').stop().animate({
-            scrollTop: target.offset().top
-        }, 1000);
+            var objectTop = $(this).offset().top;
+            var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+
+            if ( objectTop < windowBottom ) {
+                if ( objectTop < windowBottom - animation_height ) {
+                    $(this).css( {
+                        transition: 'opacity .4s linear',
+                        opacity: 1
+                    }, );
+
+                } else {
+                    $(this).css( {
+                        opacity: 0
+                    } );
+                }
+            } else {
+                $(this).css( 'opacity', 0 );
+            }
+        });
     }
-
-});
-
-var form = $('#bookForm');
-
-$( '#hamburger' ).click(function() {
-    $( '.navbar' ).toggleClass( 'navbar-transparent' );
-    $( '.navbar' ).toggleClass( 'bg-secondary' );
-});
-
-$("#book-submit").click(function() {
-    alert("Your message has been sent.")
-});
-
-$("#contactSubmit").click(function() {
-    alert("Your message has been sent.")
-});
-
-form.find('select:first').change(function() {
-    $.ajax( {
-        type: "POST",
-        url: form.attr( 'action' ),
-        data: form.serialize(),
-        success: function() {
-            alert("your message was sent");
-        }
-    })
-})
-$('#contact-form').validate({
-    rules: {
-        name: {
-            minlength: 2,
-            required: true
-        },
-        email: {
-            required: true,
-            email: true
-        },
-        message: {
-            minlength: 2,
-            required: true
-        }
-    },
-    highlight: function (element) {
-        $(element).closest('.control-group').removeClass('success').addClass('error');
-    },
-    success: function (element) {
-        element.text('OK!').addClass('valid')
-            .closest('.control-group').removeClass('error').addClass('success');
-    }
-});
-});
+    $('.fade').css( 'opacity', 0 );
+    fade();
+    $(window).scroll(function() {fade();});
 
 });

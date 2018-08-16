@@ -12,6 +12,9 @@ body {
     background-color:rgb(0, 0, 0);
     color:white;
 }
+.fade, .fade2, .fade3 {
+    opacity: 0;
+}
 
 /* Navbar Styling */
 
@@ -32,7 +35,7 @@ body {
 /* Home Styling */
 
 .masthead {
-    height:550px;
+    height:500px;
     width: 100%;
     margin-top:60px;
     color: rgb(255, 255, 255);
@@ -174,6 +177,9 @@ hr {
 .gal-cards .btn {
     margin-top: 20px;
 }
+.gal-head {
+    margin-top: 60px;
+}
 
 /* About Page Styling */
 
@@ -248,4 +254,10 @@ hr {
 }
 .contact-article h2{
     font-size: 1.5em;
+}
+
+/* Galleries Styling */
+
+.gal-article img {
+    width: 100%;
 }
