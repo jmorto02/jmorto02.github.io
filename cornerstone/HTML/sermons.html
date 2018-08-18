@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to Cornerstone Assembly!</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link href="../stylesheet.css" rel="stylesheet" type="text/css" />
+    <!-- MyList Styles -->
+    <link rel="stylesheet" href="../mylist-player/css/mylist-player.css" />
+    <!-- MyList PLAYER SETTINGS -->
+    <script type="text/javascript">
+	    var playListID = ["PLILhdn3juTavgrEBYimOc5fvbCcW-9Gbl"]; // replace with your desired youtube playlist ID
+	    var apiKey = "AIzaSyBMRyIdlgyAKIoKe9ptUZgejHZQB3RWumY"; // this default YouTube API key will work but you should change it to your own
+	    var autoPlayNext = 0; // auto play next video in list when current ends? 0 for no. 1 for yes.
+	    var showPlayerControls = 1; // display YouTube video player controls? 0 for no. 1 for yes.
+	    var showVideoInfo = 1; // display video title on youtube player? 0 for no. 1 for yes.
+	    var showRelatedVideos = 0; // display related videos after video ends? 0 for no. 1 for yes.
+	    var showTitlesInList = 1; // display video titles under each thumbnail in playlist? 0 for no. 1 for yes.
+    </script>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body class="give-body">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Cornerstone Assembly</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar-dark bg-dark" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="home.html">home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">about</a> <!-- team, ministries, connect groups -->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="give.html">give</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="sermons.html">sermons</a>
+                </li>      
+              </ul>
+            </div>
+        </nav>
+        <!-- MyList Javascript -->
+        <script src="../mylist-player/js/mylist-player.js"></script>
+
+        <article class="give-article">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <!-- THE YOUTUBE PLAYER -->
+                        <div class="mlvp-container">
+                            <div id="vid_frame1"></div>
+                        </div>
+                        <!-- LEFT AND RIGHT ARROWS -->
+                        <div class="mlvp-arrows">
+                            <div class="mlvp-arrow-left"><i class="demo-icon icon-left-open">&#xe800;</i></div>
+                            <div class="mlvp-arrow-right"><i class="demo-icon icon-right-open">&#xe801;</i></div>
+                        </div>
+                        <!-- THE PLAYLIST -->
+                        <div class="mlvp-list-container">
+                            <div class="mlvp-list noselect" ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </header>
+     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+</html>

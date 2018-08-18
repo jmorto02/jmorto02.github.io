@@ -1,0 +1,289 @@
+/* FIRA SANS */
+.navbar li {
+    margin-left: 15px;
+}
+.navbar li a {
+    font-family: 'roboto', sans-serif;
+    font-size: 1.2em;
+}
+.align-center {
+    text-align:center;
+}
+* {
+    font-family: 'roboto', sans-serif;
+}
+.navbar img {
+    width: 27%;
+}
+
+/* Home Styling */
+
+.masthead {
+    height:500px;
+    width: 100%;
+    margin-top:60px;
+    color: rgb(255, 255, 255);
+    background: url("pix/home-background.jpg") no-repeat bottom center scroll;
+    background-color: rgb(0, 0, 0);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.masthead h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size:3.5em;
+    text-align:center;
+    margin-top: 4em;
+    margin-bottom: 0.5em;
+    letter-spacing:2px;
+    color: black;
+    font-weight: bold;
+}
+.masthead h3 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom:3.5em;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-weight: bold;
+    letter-spacing:2px;
+}
+.intro-text {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+.intro-text img {
+    width:100%;
+}
+.intro-text h2 {
+    font-family: 'roboto', sans-serif;
+    font-size:2.25em;
+    color:#4d4d4d;
+}
+.intro-text h4 {
+    margin-bottom: 40px;
+}
+.intro-cards {
+    margin-top: 2.25em;
+    margin-bottom: 2.25em;
+}
+.intro-cards h2 {
+    font-family: 'roboto', sans-serif;
+    font-weight: 200;
+    font-size: 1.5em;
+    margin-bottom: 1.75em;
+}
+.intro-cards img {
+    width: 350px;
+    height: 275px;
+}
+.intro-cards p {
+    margin-top: 20px;
+    font-family: 'roboto', sans-serif;
+    font-weight: 200;
+}
+.intro-cards .btn {
+    margin-top: 10px;
+}
+hr {
+    border-color: rgb(122, 122, 122);
+}
+.intro-team {
+    margin-top: 2.25em;
+    margin-bottom: 2.25em;
+}
+.intro-team img {
+    width: 80%;
+    height: auto;
+}
+.intro-team .row {
+    margin-top: 40px;
+}
+.intro-team h2 {
+    font-weight: bold;
+}
+.intro-team h3 {
+    margin-bottom: 20px;
+}
+.a {
+    margin-top: -20px;
+}
+.intro-footer img {
+    height:40px;
+    margin: 0 20px;
+    margin-bottom: 10px;
+}
+
+/* About styling */
+
+.about-head {
+    height:500px;
+    width: 100%;
+    margin-top:60px;
+    color: rgb(255, 255, 255);
+    background: url("pix/about-bg.jpg") no-repeat bottom center scroll;
+    background-color: rgb(0, 0, 0);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.about-head h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size:3.5em;
+    text-align:center;
+    margin-top: 4em;
+    margin-bottom: 0.5em;
+    letter-spacing:2px;
+    color: rgb(255, 255, 255);
+}
+.about-head h3 {
+    font-family: 'Roboto', sans-serif;
+    margin-bottom:3.5em;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;
+    letter-spacing:2px;
+}
+.about-text {
+    text-align:center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+.about-text h2 {
+    font-family: 'roboto', sans-serif;
+    font-size:2.25em;
+    font-weight:200;
+    color:#4d4d4d;
+}
+.about-article h3 {
+    font-size: 1.4em;
+    color:rgb(95, 95, 95);
+}
+.about-article .btn {
+    margin-top: 15px;
+}
+.about-article img {
+    border-radius:50%;
+    border: 0px solid black;
+    width:100%;
+    margin-top: 2.4em;
+}
+.about-img {
+    text-align:center;
+}
+
+/* Give Styling */
+
+.give-body {
+    background-image:url(pix/give-background.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.give-article .container {
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.give-article .col-lg-6 {
+    margin: 20px 0;
+}
+.give-article .top {
+    margin-top: 50px;
+}
+.give-article .right {
+    text-align: left;
+}
+.give-article .left {
+    text-align: right;
+}
+.give-article h1 {
+    font-family: 'roboto', sans-serif;
+    font-size:1.4em;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+.give-article p {
+    font-family: 'roboto', sans-serif;
+}
+.give-article img {
+    -webkit-box-shadow: 0px 14px 54px -4px rgba(133,133,133,1);
+    -moz-box-shadow: 0px 14px 54px -4px rgba(133,133,133,1);
+    box-shadow: 0px 14px 54px -4px rgba(133,133,133,1);
+}
+
+/* Contact Styling */
+
+.contact-article {
+    font-family: 'roboto', sans-serif;
+}
+.contact-body {
+    background-image:url(pix/contact-background.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.contact-article h1 {
+    font-family: 'roboto', sans-serif;
+    font-size:1.4em;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+.contact-article .container {
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.contact-article .col-lg-6 {
+    margin: 20px 0;
+}
+.contact-article .top {
+    margin-top: 50px;
+}
+.contact-article .right {
+    text-align: left;
+}
+.contact-article .left {
+    text-align: right;
+}
+
+/* Sermons Styling */
+
+.sermons-body{
+    background: linear-gradient(#ffffff, #a7cfff);
+}
+.sermons-head{
+    background: linear-gradient(to right,#00c6ff, #0072ff);
+    height:350px;
+    margin-top:-25px;
+    width:100%;
+    text-align:center;
+    display:table;
+}
+.sermons-article{
+    width:90%;
+    margin:auto;
+    background: linear-gradient(#ffffff, #adadad);
+    padding:50px;
+    margin-top:-80px;
+    box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.75);
+    text-align:center;
+}
+.sermons-head h1{
+    font-family:'Slabo 27px', sans-serif;
+    font-size:3.2em;
+    font-weight:300;
+    color:white;
+    margin-top:2.3em;
+    margin-left:-30px;
+}
+#first{
+    margin-left:-1.4em;
+}
+#player-container1{
+    width:60%;
+    padding-left:240px;
+}
