@@ -1,96 +1,120 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Welcome to Cornerstone Assembly!</title>
+<!doctype html>
+<html lang="en">
+    <head>
+    <title>Cornerstone Assembly</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link href="../stylesheet.css" rel="stylesheet" type="text/css" />
-</head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<body class="give-body">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Cornerstone Assembly</a>
+    <!-- Local stylesheet -->
+    <link rel="stylesheet" href="../stylesheet.css">
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="home.html"><img src="../pix/cornerstone-logo.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <span id="hamburger" class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse navbar-dark bg-dark" id="navbarNav">
+            <div class="collapse navbar-collapse bg-light navbar-light" id="navbarNav">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="home.html">home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">about</a> <!-- team, ministries, connect groups -->
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="give.html">Give</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="give.html">give</a>
+                  <a class="nav-link" href="contact.html">Contact</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">contact</a>
+                  <a class="nav-link" href="sermons.html">Sermons</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="sermons.html">sermons</a>
-                </li>      
               </ul>
             </div>
         </nav>
+        <!-- Masthead -->
+        <header class="give-head">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <h1>Give Online</h1>
+                </div>
+              </div>
+            </div>
+        </header>
+        <section class="give-text">
+            <div class="container">
+                <h2>Giving is not what we do,</h2>
+                <h2>giving is who we are.</h2>
+            </div>
+        </section>
+        <div class="container">
+            <hr />
+        </div>
         <article class="give-article">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 left top">
-                        <img src="https://picsum.photos/500/253">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <h1>Give Online</h1><br />
+                        <h3>You can give to support our church, safe and secure. Give a one-time
+                            gift or set up simple recurring giving by clicking the button below.
+                        </h3>
+                        <h3>"Bring the whole tithe into the storehouse, that there may be food in my
+                            house. 'Test me in this', says the Lord almighty, 'and see if I will not throw
+                            open the floodgates of heaven and pour out so much blessing that there will
+                            not be room enough to store it.'"
+                        </h3>
+                        <a role="button" href="give-form.html" class="btn btn-outline-success">Give here</a>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 right top">
-                        <h1>Online Giving</h1>
-                        <p>You can give to support our church online, safe and secure.
-                            Give a one time gift or set up simple recurring giving by clicking
-                            the link below.
-                        </p>
-                        <p>"Bring the whole tithe into the storehouse, that there may be food in my house. 
-                            Test me in this," says the LORD Almighty, "and see if I will not throw open the floodgates 
-                            of heaven and pour out so much blessing that there will not be room enough to store it."</p>
-                        <a class="btn btn-dark" type="button" href="give-form.html">give here</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 left">
-                        <h1>text to give</h1>
-                        <p>Another safe and secure method of giving is through text giving.
-                            Just text any amount to 12345.
-                        </p>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 right">
-                        <img src="https://picsum.photos/500/254">
+                    <div class="col-lg-6 col-md-6 col-sm-12 give-img">
+                        <img src="../pix/give-1.jpg">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 left">
-                        <img src="https://picsum.photos/500/255">
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <img src="../pix/give-2.jpeg">
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 right">
-                        <h1>other ways to give</h1>
-                        <p>You can always give in person during the tithe and offering
-                            time of our worship or you can mail a gift to our church building directly
-                            at:
-                        </p>
-                        <p><strong>4055 N 2nd St</strong></p>
-                        <p><strong>Rogers, AR</strong></p>
-                        <p><strong>72756</strong></p>
+                    <div class="col-lg-6 col-md-6 col-sm-12 give-img">
+                        <h1>Other ways to Give</h1>
+                        <h3>One safe way to give is to simply mail us a gift. This can be cash or check,
+                            whatever works best for you. Our address is:
+                        </h3>
+                        <h5><strong>4055 N 2nd St, Rogers, AR 72756.</strong></h5><br />
+                        <h3>Giving to the church doesn't always look like money! A major way to give
+                            to our church is by serving, praying for us, or giving us feedback on our
+                            church. We appreciate anything and everything.
+                        </h3>
                     </div>
                 </div>
             </div>
         </article>
-    </header>
-     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-</body>
+        <div class="container">
+            <hr />
+        </div>
+        <footer class="intro-footer container text-center">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <p>© all images Cornerstone Assembly | 2018</p>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <a href="https://www.facebook.com/cornerstonenwa/"><img src="../pix/facebook.png"></a>
+                    <a href="https://www.instagram.com/cornerstonenwa/"><img src="../pix/instagram.png"></a>
+                    <a href="https://www.youtube.com/channel/UCu7fNwsqXx33Xe3_FIgh4dA"><img src="../pix/youtube.png"></a>
+                </div>
+            </div>
+        </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    </body>
 </html>

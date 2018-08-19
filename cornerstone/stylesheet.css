@@ -171,47 +171,55 @@ hr {
 }
 .about-img {
     text-align:center;
+    margin-bottom: 35px;
 }
 
 /* Give Styling */
 
-.give-body {
-    background-image:url(pix/give-background.jpg);
+.give-head {
+    height:500px;
+    width: 100%;
+    margin-top:60px;
+    color: rgb(255, 255, 255);
+    background: url("pix/give-bg.jpg") no-repeat bottom center scroll;
+    background-color: rgb(0, 0, 0);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
-.give-article .container {
-    background-color: white;
-    margin-top: 50px;
-    margin-bottom: 50px;
+.give-head h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size:3.5em;
+    text-align:center;
+    margin-top: 4em;
+    margin-bottom: 0.5em;
+    letter-spacing:2px;
+    color: rgb(255, 255, 255);
 }
-.give-article .col-lg-6 {
-    margin: 20px 0;
+.give-text {
+    text-align:center;
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
-.give-article .top {
-    margin-top: 50px;
-}
-.give-article .right {
-    text-align: left;
-}
-.give-article .left {
-    text-align: right;
-}
-.give-article h1 {
+.give-text h2 {
     font-family: 'roboto', sans-serif;
-    font-size:1.4em;
-    font-weight:bold;
-    text-transform: uppercase;
+    font-size:2.25em;
+    font-weight:200;
+    color:#4d4d4d;
 }
-.give-article p {
-    font-family: 'roboto', sans-serif;
+.give-article h3 {
+    font-size: 1.25em;
+    color:rgb(95, 95, 95);
+}
+.give-article .btn {
+    margin-top: 15px;
 }
 .give-article img {
-    -webkit-box-shadow: 0px 14px 54px -4px rgba(133,133,133,1);
-    -moz-box-shadow: 0px 14px 54px -4px rgba(133,133,133,1);
-    box-shadow: 0px 14px 54px -4px rgba(133,133,133,1);
+    width: 100%;
+}
+.give-article .row {
+    margin: 40px 0;
 }
 
 /* Contact Styling */
