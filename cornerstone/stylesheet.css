@@ -15,6 +15,9 @@
 .navbar img {
     width: 27%;
 }
+.bg-light {
+    background-color:white;
+}
 
 /* Home Styling */
 
@@ -23,8 +26,8 @@
     width: 100%;
     margin-top:60px;
     color: rgb(255, 255, 255);
-    background: url("pix/home-background.jpg") no-repeat bottom center scroll;
-    background-color: rgb(0, 0, 0);
+    background: url("pix/home-bg.jpg") no-repeat bottom center scroll;
+    background-color: rgb(255, 255, 255);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -34,11 +37,12 @@
     font-family: 'Roboto', sans-serif;
     font-size:3.5em;
     text-align:center;
-    margin-top: 4em;
+    margin-top: 3.2em;
     margin-bottom: 0.5em;
     letter-spacing:2px;
-    color: black;
-    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
+    padding:10px;
 }
 .masthead h3 {
     font-family: 'Roboto', sans-serif;
@@ -47,6 +51,8 @@
     text-align: center;
     font-weight: bold;
     letter-spacing:2px;
+    background-color:rgb(255, 255, 255);
+    padding:15px;
 }
 .intro-text {
     margin-top: 5em;
@@ -62,6 +68,9 @@
 }
 .intro-text h4 {
     margin-bottom: 40px;
+}
+.intro-text p {
+    margin-bottom:40px;
 }
 .intro-cards {
     margin-top: 2.25em;
@@ -132,18 +141,22 @@ hr {
     font-family: 'Roboto', sans-serif;
     font-size:3.5em;
     text-align:center;
-    margin-top: 4em;
+    margin-top: 3.2em;
     margin-bottom: 0.5em;
     letter-spacing:2px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
+    padding:10px;
 }
 .about-head h3 {
     font-family: 'Roboto', sans-serif;
     margin-bottom:3.5em;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     font-weight: bold;
     letter-spacing:2px;
+    background-color:rgb(255, 255, 255);
+    padding:15px;
 }
 .about-text {
     text-align:center;
@@ -164,7 +177,6 @@ hr {
     margin-top: 15px;
 }
 .about-article img {
-    border-radius:50%;
     border: 0px solid black;
     width:100%;
     margin-top: 2.4em;
@@ -172,6 +184,11 @@ hr {
 .about-img {
     text-align:center;
     margin-bottom: 35px;
+}
+.about-img2 {
+    text-align:center;
+    margin-bottom:35px;
+    width:100%;
 }
 
 /* Give Styling */
@@ -195,7 +212,9 @@ hr {
     margin-top: 4em;
     margin-bottom: 0.5em;
     letter-spacing:2px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
+    padding:10px;
 }
 .give-text {
     text-align:center;
@@ -224,74 +243,188 @@ hr {
 
 /* Contact Styling */
 
-.contact-article {
-    font-family: 'roboto', sans-serif;
-}
-.contact-body {
-    background-image:url(pix/contact-background.jpg);
+.contact-head {
+    height:500px;
+    width: 100%;
+    margin-top:60px;
+    color: rgb(255, 255, 255);
+    background: url("pix/contact-bg.jpg") no-repeat bottom center scroll;
+    background-color: rgb(0, 0, 0);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
-.contact-article h1 {
+.contact-head h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size:3.5em;
+    text-align:center;
+    margin-top: 4em;
+    margin-bottom: 0.5em;
+    letter-spacing:2px;
+    color: rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
+    padding:10px;
+}
+.contact-text {
+    text-align:center;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+.contact-text h2 {
     font-family: 'roboto', sans-serif;
-    font-size:1.4em;
-    font-weight:bold;
-    text-transform: uppercase;
-}
-.contact-article .container {
-    background-color: white;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-.contact-article .col-lg-6 {
-    margin: 20px 0;
-}
-.contact-article .top {
-    margin-top: 50px;
-}
-.contact-article .right {
-    text-align: left;
-}
-.contact-article .left {
-    text-align: right;
+    font-size:2.25em;
+    font-weight:200;
+    color:#4d4d4d;
 }
 
 /* Sermons Styling */
 
-.sermons-body{
-    background: linear-gradient(#ffffff, #a7cfff);
+.sermons-head {
+    height:500px;
+    width: 100%;
+    margin-top:60px;
+    color: rgb(255, 255, 255);
+    background: url("pix/sermons-bg.jpg") no-repeat bottom center scroll;
+    background-color: rgb(0, 0, 0);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-.sermons-head{
-    background: linear-gradient(to right,#00c6ff, #0072ff);
-    height:350px;
-    margin-top:-25px;
-    width:100%;
+.sermons-head h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size:3.5em;
     text-align:center;
-    display:table;
+    margin-top: 4em;
+    margin-bottom: 0.5em;
+    letter-spacing:2px;
+    color: rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
+    padding:10px;
 }
-.sermons-article{
-    width:90%;
-    margin:auto;
-    background: linear-gradient(#ffffff, #adadad);
-    padding:50px;
-    margin-top:-80px;
-    box-shadow: 10px 10px 40px 0px rgba(0,0,0,0.75);
+.sermons-text {
     text-align:center;
+    margin-top: 5em;
+    margin-bottom: 5em;
 }
-.sermons-head h1{
-    font-family:'Slabo 27px', sans-serif;
-    font-size:3.2em;
-    font-weight:300;
-    color:white;
-    margin-top:2.3em;
-    margin-left:-30px;
+.sermons-text h2 {
+    font-family: 'roboto', sans-serif;
+    font-size:2.25em;
+    font-weight:200;
+    color:#4d4d4d;
 }
-#first{
-    margin-left:-1.4em;
+body {
+    margin: 30px;
+    padding: 0;
+    background: #ddd;
+    font-family: Arial, Helvetica, sans-serif;
 }
-#player-container1{
-    width:60%;
-    padding-left:240px;
+
+.title {
+    width: 100%;
+    max-width: 854px;
+    margin: 0 auto;
+}
+
+.caption {
+    width: 100%;
+    max-width: 854px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.vid-main-wrapper {
+    width: 100%;
+    max-width: 1100px;
+    min-width: 440px;
+    background: #fff;
+    margin: 0 auto;
+}
+
+
+/*  VIDEO PLAYER CONTAINER
+############################### */
+.vid-container {
+  position: relative;
+  padding-bottom: 52%;
+  padding-top: 30px; 
+  height: 0; 
+width:70%;
+float:left;
+}
+
+.vid-container iframe,
+.vid-container object,
+.vid-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 360px;
+}
+
+
+/*  VIDEOS PLAYLIST 
+############################### */
+.vid-list-container {
+  width: 30%;
+height:360px;
+  overflow: hidden;
+float:right;
+}
+
+.vid-list-container:hover, .vid-list-container:focus {
+overflow-y: auto;
+}
+
+ol#vid-list {
+margin:0;
+padding:0;
+background: #222;
+}
+
+ol#vid-list li {
+list-style: none;
+}
+
+ol#vid-list li a {
+text-decoration: none;
+background-color: #222;
+height:55px;
+display:block;
+padding:10px;
+}
+
+ol#vid-list li a:hover {
+background-color:#666666
+}
+
+.vid-thumb {
+float:left;
+  margin-right: 8px;
+}
+
+.active-vid { 
+background:#3A3A3A;
+}
+
+#vid-list .desc {
+  color: #CACACA;
+  font-size: 13px;
+  margin-top:5px;
+}
+
+
+@media (max-width: 624px) {
+  body {
+      margin: 15px;
+  }
+  .caption {
+      margin-top: 40px;
+  }
+  .vid-list-container {
+      padding-bottom: 20px;
+  }
+
 }

@@ -1,86 +1,148 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Welcome to Cornerstone Assembly!</title>
+<!doctype html>
+<html lang="en">
+    <head>
+    <title>Cornerstone Assembly</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link href="../stylesheet.css" rel="stylesheet" type="text/css" />
-    <!-- MyList Styles -->
-    <link rel="stylesheet" href="../mylist-player/css/mylist-player.css" />
-    <!-- MyList PLAYER SETTINGS -->
-    <script type="text/javascript">
-	    var playListID = ["PLILhdn3juTavgrEBYimOc5fvbCcW-9Gbl"]; // replace with your desired youtube playlist ID
-	    var apiKey = "AIzaSyBMRyIdlgyAKIoKe9ptUZgejHZQB3RWumY"; // this default YouTube API key will work but you should change it to your own
-	    var autoPlayNext = 0; // auto play next video in list when current ends? 0 for no. 1 for yes.
-	    var showPlayerControls = 1; // display YouTube video player controls? 0 for no. 1 for yes.
-	    var showVideoInfo = 1; // display video title on youtube player? 0 for no. 1 for yes.
-	    var showRelatedVideos = 0; // display related videos after video ends? 0 for no. 1 for yes.
-	    var showTitlesInList = 1; // display video titles under each thumbnail in playlist? 0 for no. 1 for yes.
-    </script>
-</head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<body class="give-body">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">Cornerstone Assembly</a>
+    <!-- Local stylesheet -->
+    <link rel="stylesheet" href="../stylesheet.css">
+    </head>
+    <body>  
+        
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="home.html"><img src="../pix/cornerstone-logo.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+              <span id="hamburger" class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse navbar-dark bg-dark" id="navbarNav">
+            <div class="collapse navbar-collapse bg-light navbar-light" id="navbarNav">
               <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="home.html">home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">about</a> <!-- team, ministries, connect groups -->
+                  <a class="nav-link" href="about.html">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="give.html">give</a>
+                  <a class="nav-link" href="give.html">Give</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">contact</a>
+                  <a class="nav-link" href="contact.html">Contact</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="sermons.html">sermons</a>
-                </li>      
+                <li class="nav-item active">
+                  <a class="nav-link" href="sermons.html">Sermons</a>
+                </li>
               </ul>
             </div>
         </nav>
-        <!-- MyList Javascript -->
-        <script src="../mylist-player/js/mylist-player.js"></script>
-
-        <article class="give-article">
+        <!-- Masthead -->
+        <header class="sermons-head">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 col-md-12 col-sm-12">
-                        <!-- THE YOUTUBE PLAYER -->
-                        <div class="mlvp-container">
-                            <div id="vid_frame1"></div>
-                        </div>
-                        <!-- LEFT AND RIGHT ARROWS -->
-                        <div class="mlvp-arrows">
-                            <div class="mlvp-arrow-left"><i class="demo-icon icon-left-open">&#xe800;</i></div>
-                            <div class="mlvp-arrow-right"><i class="demo-icon icon-right-open">&#xe801;</i></div>
-                        </div>
-                        <!-- THE PLAYLIST -->
-                        <div class="mlvp-list-container">
-                            <div class="mlvp-list noselect" ></div>
-                        </div>
-                    </div>
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <h1>Sermons</h1>
                 </div>
+              </div>
+            </div>
+        </header>
+        <section class="sermons-text">
+            <div class="container">
+                <h2>Pastor Chris' sermons online,</h2>
+                <h2>anytime & anywhere.</h2>
+            </div>
+        </section>
+        <div class="container">
+            <hr />
+        </div>
+        <article class="sermons-article">
+                <div class="vid-main-wrapper clearfix">
+
+                        <!-- THE YOUTUBE PLAYER -->
+                <div class="vid-container">
+                    <iframe id="vid_frame" src="https://www.youtube.com/embed/cOSEOYi9JS4?rel=0&showinfo=0&autohide=1" frameborder="0" width="560" height="315"></iframe>
+                </div>
+          
+                <!-- THE PLAYLIST -->
+                <div class="vid-list-container">
+                      <ol id="vid-list">
+                        <li>
+                          <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/cOSEOYi9JS4?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                            <span class="vid-thumb"><img width=72 src="https://img.youtube.com/vi/cOSEOYi9JS4/default.jpg" /></span>
+                            <div class="desc">WeatherBeater™ Product Video</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/9P7mEf4bilg?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                            <span class="vid-thumb"><img width=72 src="https://img.youtube.com/vi/9P7mEf4bilg/default.jpg" /></span>
+                            <div class="desc">X-act Contour® Product Video</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/KHxNpXovl58?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                            <span class="vid-thumb"><img width=72 src="https://img.youtube.com/vi/KHxNpXovl58/default.jpg" /></span>
+                            <div class="desc">GearBox® Product Video</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/D_a2UBGsePQ?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                            <span class="vid-thumb"><img width=72 src="https://img.youtube.com/vi/D_a2UBGsePQ/default.jpg" /></span>
+                            <div class="desc">Mud Guards Product Video</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/vYoh2IgoBXg?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                            <span class="vid-thumb"><img width=72 src="https://img.youtube.com/vi/vYoh2IgoBXg/default.jpg" /></span>
+                            <div class="desc">Wheel Well Guards Product Video</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/RTHI_uGyfTM?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                            <span class="vid-thumb"><img width=72 src="https://img.youtube.com/vi/RTHI_uGyfTM/default.jpg" /></span>
+                            <div class="desc">Cargo Liner Product Video</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/EvTjAjLNphE?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                            <span class="vid-thumb"><img width=72 src="https://img.youtube.com/vi/EvTjAjLNphE/default.jpg" /></span>
+                            <div class="desc">Husky Liners Products</div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="javascript:void();" onClick="document.getElementById('vid_frame').src='https://youtube.com/embed/-Qpc79oaJQg?autoplay=1&rel=0&showinfo=0&autohide=1'">
+                            <span class="vid-thumb"><img width=72 src="https://img.youtube.com/vi/-Qpc79oaJQg/default.jpg" /></span>
+                            <div class="desc">Custom Molded Mud Guards</div>
+                          </a>
+                        </li>
+                        
+                      </ul>
+                 </div>
             </div>
         </article>
-    </header>
-     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-</body>
+        <div class="container">
+            <hr />
+        </div>
+        <footer class="intro-footer container text-center">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <p>© all images Cornerstone Assembly | 2018</p>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                    <a href="https://www.facebook.com/cornerstonenwa/"><img src="../pix/facebook.png"></a>
+                    <a href="https://www.instagram.com/cornerstonenwa/"><img src="../pix/instagram.png"></a>
+                    <a href="https://www.youtube.com/channel/UCu7fNwsqXx33Xe3_FIgh4dA"><img src="../pix/youtube.png"></a>
+                </div>
+            </div>
+        </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    </body>
 </html>
