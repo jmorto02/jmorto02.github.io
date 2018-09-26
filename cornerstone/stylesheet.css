@@ -1,4 +1,7 @@
 /* FIRA SANS */
+img {
+    border-radius: 15px;
+}
 .navbar li {
     margin-left: 15px;
 }
@@ -17,6 +20,9 @@
 }
 .bg-light {
     background-color:white;
+}
+.white {
+    background-color: #f8f9fa;
 }
 
 /* Home Styling */
@@ -44,6 +50,24 @@
     background-color:rgb(255, 255, 255);
     padding:10px;
 }
+@media only screen and (max-width: 990px) {
+    .masthead h1 {
+        font-size:2em;
+        margin-top: 5em;
+    }
+}
+@media only screen and (max-width: 770px) {
+    .masthead h1 {
+        font-size:2em;
+        margin-top: 5em;
+    }
+}
+@media only screen and (max-width: 405px) {
+    .masthead h1 {
+        font-size:2em;
+        margin-top: 4em;
+    }
+}
 .masthead h3 {
     font-family: 'Roboto', sans-serif;
     margin-bottom:3.5em;
@@ -60,6 +84,16 @@
 }
 .intro-text img {
     width:100%;
+}
+@media only screen and (max-width: 995px) {
+    .intro-text .btn {
+        margin-bottom:15px;
+    }
+}
+@media only screen and (max-width: 575px) {
+    .intro-text img {
+        margin-bottom: 20px;
+    }
 }
 .intro-text h2 {
     font-family: 'roboto', sans-serif;
@@ -94,6 +128,14 @@
 .intro-cards .btn {
     margin-top: 10px;
 }
+@media only screen and (max-width: 993px) {
+    .intro-cards .btn {
+        margin-bottom: 30px;
+    }
+    .intro-cards h2 {
+        margin-bottom: .8em;
+    }
+}
 hr {
     border-color: rgb(122, 122, 122);
 }
@@ -105,11 +147,21 @@ hr {
     width: 80%;
     height: auto;
 }
+@media only screen and (max-width: 994px) {
+    .intro-team img {
+        margin-bottom: 20px;
+    }
+}
 .intro-team .row {
     margin-top: 40px;
 }
 .intro-team h2 {
     font-weight: bold;
+}
+@media only screen and (max-width: 770px) {
+    .intro-team h3 {
+        margin-top: 40px;
+    }
 }
 .intro-team h3 {
     margin-bottom: 20px;
@@ -157,6 +209,24 @@ hr {
     letter-spacing:2px;
     background-color:rgb(255, 255, 255);
     padding:15px;
+}
+@media only screen and (max-width: 990px) {
+    .about-head h1 {
+        font-size:2em;
+        margin-top: 5em;
+    }
+}
+@media only screen and (max-width: 770px) {
+    .about-head h1 {
+        font-size:2em;
+        margin-top: 5em;
+    }
+}
+@media only screen and (max-width: 405px) {
+    .about-head h1 {
+        font-size:2em;
+        margin-top: 4em;
+    }
 }
 .about-text {
     text-align:center;
@@ -276,6 +346,11 @@ hr {
     font-size:2.25em;
     font-weight:200;
     color:#4d4d4d;
+}
+@media only screen and (max-width: 770px) {
+    .contact-article h2 {
+        margin-top: 20px;
+    }
 }
 
 /* Sermons Styling */

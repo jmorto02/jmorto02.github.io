@@ -1,32 +1,34 @@
 $(document).ready( function() {
-    function fade() {
-        var animation_height = $(window).innerHeight() * 0.25;
-        var ratio = Math.round( (1 / animation_height) * 10000 ) / 10000;
 
-        $('.fade').each(function() {
+    function logFormValues() {
+        console.log(document.getElementById('fName').value);
+        console.log(document.getElementById('lName').value);
+        console.log(document.getElementById('email').value);
+        console.log(document.getElementById('message').value);
+      };
 
-            var objectTop = $(this).offset().top;
-            var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+      var isValid;
 
-            if ( objectTop < windowBottom ) {
-                if ( objectTop < windowBottom - animation_height ) {
-                    $(this).css( {
-                        transition: 'opacity .4s linear',
-                        opacity: 1
-                    }, );
+      function determineIfValid() {
+        if ((document.getElementById('fName').value) && 
+            (document.getElementById('lName').value) &&
+            (document.getElementById('email').value) &&
+            (document.getElementById('message').value)) {
+              isValid = true;
+        } else { isValid = false; }
+      }
+      
+      $( '#form-btn' ).click(function() {
 
-                } else {
-                    $(this).css( {
-                        opacity: 0
-                    } );
-                }
-            } else {
-                $(this).css( 'opacity', 0 );
-            }
-        });
-    }
-    $('.fade').css( 'opacity', 0 );
-    fade();
-    $(window).scroll(function() {fade();});
+        determineIfValid();
+        
+        console.log(isValid);
+        
+        if (isValid) {
+          alert("Your message has been sent!");
+        } else { alert("Please fill out all of the fields.") }
+
+        logFormValues();
+      })
 
 });
