@@ -310,6 +310,16 @@ hr {
 .give-article .row {
     margin: 40px 0;
 }
+@media only screen and (max-width: 768px) {
+
+    .btn {
+        margin-bottom: 20px;
+    }
+    #img2 {
+        margin-bottom: 20px;
+    }
+
+}
 
 /* Contact Styling */
 
