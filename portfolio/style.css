@@ -1,0 +1,116 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+.bg-custom {
+    background: #343633;
+    box-shadow: 0px 5px 15px 1px #2d302c6c;
+}
+.bg-custom a {
+    color: white;
+}
+.bg-custom a:hover {
+    color: rgb(211, 211, 211);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.dashboard {
+    color: white;
+    height: 100vh;
+    background: #00557E;
+}
+.dashboard .row {
+    height: 100vh;
+}
+.dashboard p {
+    color: rgb(212, 212, 212);
+    margin-top: 40px;
+}
+.dashboard img {
+    width: 100%;
+}
+
+/* Experience Section */
+
+.experience {
+    color: black;
+    height: 100vh;
+    background: #4281A4;
+    padding-top: 18vh;
+}
+.experience h2 {
+    color: white;
+    margin-bottom: 25px;
+}
+#main {
+    background: white;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    margin-top: 3vh;
+    box-shadow: 0px 5px 15px 1px rgb(44, 88, 112);
+}
+#main-exp {
+    padding-top: 30px;
+    padding-bottom: 20px
+}
+.col-sm-12 h2 {
+    color: black;
+}
+.experience h5 {
+    color: rgb(83, 83, 83);
+}
+
+/* Education  Section */
+
+.education {
+    color: black;
+    height: 100vh;
+    background: #759FBC;
+    padding-top: 18vh;
+}
+.education h2 {
+    color: white;
+    margin-bottom: 25px;
+}
+#main-2 {
+    background: white;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    margin-top: 3vh;
+    box-shadow: 0px 5px 15px 1px rgb(83, 113, 134);
+}
+#main-exp {
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+.col-sm-12 h2 {
+    color: black;
+}
+#edu img {
+    padding: 50px 10px 0 10px;
+}
+.education h5 {
+    color: rgb(83, 83, 83);
+}
+
+/* Skills */
+
+.skills {
+    color: black;
+    height: 100vh;
+    background: #87A9BA;
+    padding-top: 18vh;
+}
+.skills h2 {
+    color: white;
+}
+.skills .col {
+    background: white;
+    padding: 20px;
+    border-right: 15px solid #87A9BA;
+}
+.skills .text-center {
+    margin-bottom: 30px;
+}
