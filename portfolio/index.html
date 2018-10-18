@@ -4,153 +4,167 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/home.png">
 
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-
-    <title>Jacob Morton</title>
-
-    <link rel="icon" href="img/favicon.png">
+    <title>Blue 42</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-custom fixed-top">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+    <nav class="navbar navbar-expand-lg navbar-light bg-custom fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav mx-auto">
-            <a class="nav-item nav-link active" id='dashboard-link' href="#dashboard">Dashboard <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link active" id='experience-link' href="#experience">Experience</a>
-            <a class="nav-item nav-link active" id='education-link' href="#education">Education</a>
-            <a class="nav-item nav-link active" id='skills-link' href="#skills">Skills</a>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#education">Education</a>
+            </li>
+            </ul>
         </div>
     </nav>
-
-    <section class='dashboard' id='dashboard'>
+    <section class='home' id='home'>
         <div class='container'>
             <div class='row'>
-                <div class='col-sm-12 col-md-6 my-auto'>
-                    <h1>Jacob Morton</h1>
-                    <h4>Front-End Software Developer</h4>
-                    <p>I'm Jacob, a software developer who is passionate about clean, powerful,
-                       and well-executed code. After being introduced to coding by a friend in
-                       college, I grabbed on and knew I wanted to make it my career. 
-                    </p>
+                <div class='col-md-6'>
+                    <div class='v-center'>
+                        <h1>Jacob Morton</h1>
+                        <h3>Software Developer</h3>
+                        <p>I'm Jacob, a front-end software developer
+                        currently working at J.B. Hunt. I also do freelance
+                        work, which is mostly front-end web development.
+                        All of my projects are mobile responsive and 
+                        search-engine optimized. 
+                        </p>
+                    </div>
                 </div>
-                <div class='col-sm-12 col-md-6 my-auto'>
-                    <img src='img/dash-bg.png'>
+                <div class='col-md-6'>
+                    <img src='img/home.png';
                 </div>
             </div>
         </div>
     </section>
-
     <section class='experience' id='experience'>
         <div class='container'>
-            <h2>Experience</h2>
             <div class='row'>
-                <div class='col-sm-12' id='main'>
-                    <div class='row'>
-                        <div class='col-sm-12 col-md-2'>
-                            <img style='width:100%' src='img/jbh-logo.png'>
-                        </div>
-                        <div class='col-sm-12 col-md-10' id='main-exp'>
-                            <h2>Applications Development Intern- J.B. Hunt</h2>
-                            <h5>August 2018 - Present</h5>
-                        </div>
-                    </div>
+                <div class='col-sm-12'>
+                    <h1><span class='light'>MY</span> <span class='bold'>EXPERIENCE</span></h1>
                 </div>
             </div>
             <div class='row'>
-                <div class='col-sm-12' id='main'>
-                    <div class='row'>
-                        <div class='col-sm-12 col-md-2'>
-                            <img style='width:100%; margin: 30px 0;' src='img/freelance-icon.png'>
-                        </div>
-                        <div class='col-sm-12 col-md-10' id='main-exp'>
-                            <h2>Freelance Software Developer</h2>
-                            <h5>January 2018 - Present</h5>
-                        </div>
-                    </div>
+                <div class='col-sm-12 col-md-6'>
+                    <h3>J.B. Hunt, Software Engineer Intern</h3>
+                    <h5>August 2018 - present</h5>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class='education' id='education'>
-        <div class='container'>
-            <h2>Education</h2>
-            <div class='row'>
-                <div class='col-sm-12' id='main-2'>
-                    <div class='row' id='edu'>
-                        <div class='col-sm-12 col-md-2'>
-                            <img style='width:95%' src='img/UA-logo.png'>
-                        </div>
-                        <div class='col-sm-12 col-md-10' id='main-exp'>
-                            <h2>University of Arkansas - Bachelor of Science</h2>
-                            <h5>2016 - 2020 (exp)</h5>
-                        </div>
-                    </div>
+                <div class='col-sm-12 col-md-6'>
+                    <p>Worked on a specials projects team developing enterprise
+                       level applications with development technologies such as
+                       Angular 6, HTML5, CSS3, SCSS, TypeScript, Java, Node.js,
+                       Selenium, and Webdriver.io
+                    </p>
                 </div>
             </div>
             <div class='row'>
-                <div class='col-sm-12' id='main-2'>
-                    <div class='row' id='edu'>
-                        <div class='col-sm-12 col-md-2'>
-                            <img style='width:95%' src='img/UA-logo.png'>
-                        </div>
-                        <div class='col-sm-12 col-md-10' id='main-exp'>
-                            <h2>University of Arkansas - Certificate of IT Readiness</h2>
-                            <h5>January - July 2018; front-end development</h5>
-                        </div>
-                    </div>
+                <div class='col-sm-12 col-md-6'>
+                    <h3>Freelance Software Development</h3>
+                    <h5>January 2018 - present</h5>
+                </div>
+                <div class='col-sm-12 col-md-6'>
+                    <p>Mainly work with clients who either need a new website or
+                       want to modernize their existing site. We go through a
+                       full stack process of brand identity planning, user
+                       experience design and mocking with Adobe XD, web application
+                       development with Angular 6 and Twitter Bootstrap, and
+                       building out any functionality needed through the site.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-
     <section class='skills' id='skills'>
         <div class='container'>
-            <h2 style='margin-bottom: 30px;'>Skills</h2>
-            <div class='row text-center'>
-                <div class='col'>
-                    <h3><span><img style='width: 70px;' src='img/angular-logo.png'></span>Angular 6</h3>
+            <div class='row'>
+                <div class='col-md-4'>
+                    <h1><span class='light'>MY</span> <span class='bold'>SKILLS</span></h1>
                 </div>
-                <div class='col'>
-                    <h3 style='margin-top: 10px;'><span><img style='width: 55px; margin: 0 10px 0 10px' src='img/js-logo.png'></span>JavaScript</h3>
+                <div class='col-md-4 skill-card'>
+                    <img src='img/front-end-icon.png'><h2>Front-End</h2>
+                    <p>Angular 6, TypeScript, HTML5, CSS3/SCSS, Node.js,
+                       React.js, Twitter Bootstrap
+                    </p>
                 </div>
-                <div class='col'>
-                    <h3 style='margin-top: 10px;'><span><img style='width: 55px; margin:0 10px' src='img/bootstrap-logo.png'></span>Bootstrap</h3>
-                </div>
-            </div>
-            <div class='row text-center'>
-                <div class='col'>
-                    <h3><span><img style='width:65px' src='img/jquery-logo.png'></span>jQuery</h3>
-                </div>
-                <div class='col'>
-                    <h3 style='margin-top: 10px;'><span><img style='width:65px' src='img/spring-logo.png'></span>Java Spring</h3>
-                </div>
-                <div class='col'>
-                    <h3 style='margin-top: 5px; margin-left:-10px;'><span><img style='width:90px' src='img/react-logo.png'></span>ReactJs</h3>
+                <div class='col-md-4 skill-card'>
+                    <img src='img/back-end-icon.png'><h2>Back-End</h2>
+                    <p>Java including Java frameworks such as Spring
+                       and Spring Boot 
+                    </p>
                 </div>
             </div>
-            <div class='row text-center'>
-                <div class='col'>
-                    <h3 style='margin-top: 5px; margin-left:-10px;'><span><img style='width:60px' src='img/html-logo.png'></span>HTML 5</h3>
+            <div class='row'>
+                <div class='col-md-4 skill-card'>
+                    <img src='img/test-icon.png'><h2>Auto Testing</h2>
+                    <p>Selenium, Selenium IDE, and Webdriver.io
+                    </p>
                 </div>
-                <div class='col'>
-                    <h3 style='margin-top: 5px; margin-left:-10px;'><span><img style='width:45px' src='img/css-logo.png'></span> CSS 3 and SCSS</h3>
+                <div class='col-md-4 skill-card'>
+                    <img src='img/design-icon.png'><h2>Design</h2>
+                    <p>Contantly working with clients on their branding,
+                       the theme/feel of their website, and their user
+                       experience. I use Adobe XD for UX design.  
+                    </p>
                 </div>
-                <div class='col'>
-                        <h3 style='margin-top: 10px; margin-left:-10px;'><span><img style='width:40px' src='img/microsoft-logo.png'></span> Microsoft Office</h3>
+                <div class='col-md-4 skill-card'>
+                    <img src='img/interpersonal-icon.png'><h2>Interpersonal</h2>
+                    <p>Time management, collaboration, and communication
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-
-
-
+    <section class='education' id='education'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-sm-12'>
+                    <h1><span class='light'>MY</span> <span class='bold'>EDUCATION</span></h1>
+                </div>
+            </div>
+            <div class='row'>
+                <div class='col-sm-12 col-md-6 education-card'>
+                    <img src='img/education-1.jpg'>
+                    <h2>University of Arkansas</h2>
+                    <h3>Certification of IT Readiness: Front-End Development</h3>
+                    <h4>Completed July 2018</h4>
+                    <p>This certification through the University of Arkansas taught the
+                       essential software development technologies for a front-end 
+                       software engineer. It also included a full course through the 
+                       university on workplace competencies which included skills such as
+                       collaboration, deep work, and integrity.
+                    </p>
+                </div>
+                <div class='col-sm-12 col-md-6 education-card'>
+                    <img src='img/education-2.jpg'>
+                    <h2>University of Arkansas</h2>
+                    <h3>Bachelor's of Science: Computer Science</h3>
+                    <h4>In progress</h4>
+                    <p>I am currently working toward my bachelor's degree in computer
+                       science at the University of Arkansas. I am working toward this 
+                       degree so that I can provide my employer with
+                       efficient, clean, and powerful enterprise applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

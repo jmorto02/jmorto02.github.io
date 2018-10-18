@@ -1,116 +1,178 @@
+/* Navbar */
+
+.bg-custom {
+    background: #fafafa;
+}
+@media screen and (min-width: 992px) {
+    .navbar-nav li {
+        margin: 0 10px;
+    }
+}
+
+/* General Styling */
+
 * {
     font-family: 'Montserrat', sans-serif;
-}
-.bg-custom {
-    background: #343633;
-    box-shadow: 0px 5px 15px 1px #2d302c6c;
-}
-.bg-custom a {
-    color: white;
-}
-.bg-custom a:hover {
-    color: rgb(211, 211, 211);
-}
-
-html {
     scroll-behavior: smooth;
 }
+.light {
+    font-weight: 200;
+}
+.bold {
+    font-weight: 700;
+}
 
-.dashboard {
-    color: white;
+/* Home Styling */
+
+.home, .home .container {
     height: 100vh;
-    background: #00557E;
+    background: #fafafa;
 }
-.dashboard .row {
-    height: 100vh;
+.home .container {
+    position: relative;
 }
-.dashboard p {
-    color: rgb(212, 212, 212);
-    margin-top: 40px;
+.home .row {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-55%);
 }
-.dashboard img {
+.home .row .col-md-6:first-child {
+    position: relative;
+}
+.home .row .v-center {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-40%);
+}
+.home h1 {
+    color: black;
+    font-size: 4em;
+}
+.home h3 {
+    color: black;
+}
+.home p {
+    color: rgb(49, 49, 49);
+    margin-top: 20px;
+}
+.home img { 
     width: 100%;
 }
+@media screen and (max-width: 768px) {
+    .home .container {
+        position: relative;
+        padding-top: 15vh;
+    }
+    .home .row {
+        position: relative;
+    }
+    .home .row .v-center {
+        position: relative;
+        top: 0;
+        transform: none;
+    }
+}
+@media screen and (max-width: 500px) {
+    .home .container {
+        padding-top: 10vh;
+    }
+}
 
-/* Experience Section */
+/* Experience Styling  */
 
 .experience {
-    color: black;
     height: 100vh;
-    background: #4281A4;
-    padding-top: 18vh;
-}
-.experience h2 {
-    color: white;
-    margin-bottom: 25px;
-}
-#main {
-    background: white;
-    margin-bottom: 25px;
-    border-radius: 8px;
-    margin-top: 3vh;
-    box-shadow: 0px 5px 15px 1px rgb(44, 88, 112);
-}
-#main-exp {
-    padding-top: 30px;
-    padding-bottom: 20px
-}
-.col-sm-12 h2 {
+    background: #fafafa;
+    padding-top: 15vh;
     color: black;
 }
 .experience h5 {
-    color: rgb(83, 83, 83);
+    color: rgb(71, 71, 71);
+}
+.experience h1 {
+    padding: 30px;
+    margin-bottom: 8vh;
+    border-left: 2px solid black;
+}
+.experience .row {
+    margin-bottom: 8vh;
+}
+@media screen and (max-width: 768px) {
+    .experience h1 {
+        margin-bottom: 8vh;
+    }
+    .experience .row {
+        margin-bottom: 3vh;
+    }
 }
 
-/* Education  Section */
-
-.education {
-    color: black;
-    height: 100vh;
-    background: #759FBC;
-    padding-top: 18vh;
-}
-.education h2 {
-    color: white;
-    margin-bottom: 25px;
-}
-#main-2 {
-    background: white;
-    margin-bottom: 25px;
-    border-radius: 8px;
-    margin-top: 3vh;
-    box-shadow: 0px 5px 15px 1px rgb(83, 113, 134);
-}
-#main-exp {
-    padding-top: 30px;
-    padding-bottom: 20px;
-}
-.col-sm-12 h2 {
-    color: black;
-}
-#edu img {
-    padding: 50px 10px 0 10px;
-}
-.education h5 {
-    color: rgb(83, 83, 83);
-}
-
-/* Skills */
+/* Skills Styling */
 
 .skills {
-    color: black;
     height: 100vh;
-    background: #87A9BA;
-    padding-top: 18vh;
+    background: #fafafa;
+    padding-top: 30vh;
 }
-.skills h2 {
-    color: white;
+.skills h1 {
+    padding: 30px;
+    border-left: 2px solid black;
+    font-size: 3em;
 }
-.skills .col {
-    background: white;
-    padding: 20px;
-    border-right: 15px solid #87A9BA;
+.skills .skill-card {
+    padding: 30px;
 }
-.skills .text-center {
-    margin-bottom: 30px;
+.skill-card h2 {
+    display: inline-block;
+}
+.skill-card img {
+    width: 12%;
+    margin-right: 20px;
+}
+.skill-card p {
+    margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+    .skills {
+        padding-top: 12vh;
+    }
+    .skill-card img {
+        width: 8%;
+    }
+    .skill-card p {
+        margin-top: 10px;
+    }
+    .skill-card {
+        margin-bottom: -60px;
+    }
+}
+
+/* Education Styling */
+
+.education {
+    height: 100vh;
+    background: #fafafa;
+    padding-top: 10vh;
+}
+.education h1 {
+    margin-bottom: 5vh;
+    padding: 30px;
+    border-left: 2px solid black;
+    font-size: 3em;
+}
+.education-card {
+    padding: 30px;
+}
+.education-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.education-card h2 {
+    margin-top: 20px;
+    font-weight: 700;
+}
+.education-card h4 {
+    font-size: 1.3em;
+}
+.education-card p {
+    margin-top: 20px;
 }
