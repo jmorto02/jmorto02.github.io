@@ -170,9 +170,13 @@
     margin-top: 20px;
     font-weight: 700;
 }
+.education-card h3 {
+    font-size: 1.3em;
+}
 .education-card h4 {
     font-size: 1.3em;
 }
 .education-card p {
     margin-top: 20px;
+    font-size: 0.9em;
 }
