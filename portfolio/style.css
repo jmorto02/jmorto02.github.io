@@ -7,6 +7,10 @@
     .navbar-nav li {
         margin: 0 10px;
     }
+    .navbar-nav li:hover {
+        background: rgb(0, 123, 255, 0.50);
+        border-radius: 4px;
+    }
 }
 
 /* General Styling */
